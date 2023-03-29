@@ -1,0 +1,77 @@
+body {
+  background: rgb(25, 25, 25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.logo-container {
+  background: linear-gradient(to top,rgba(32, 32, 32, 0.808), rgb(58, 57, 57));
+  position: relative;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.585);
+}
+
+.logo-outter {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+}
+
+.logo-inner-left {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: rgb(202, 0, 0);
+  left: 0px;
+  top: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.logo-inner-left::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: rgb(189, 1, 180);
+  top: 20px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.logo-inner-left::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: rgb(1, 167, 84);
+  top: 40px;
+  border-radius: 50px;
+  border-top-right-radius: 0px;
+}
+
+.logo-inner-right {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: rgb(221, 108, 10);
+  top: 10px;
+  left: 20px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.logo-inner-right::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: rgb(3, 165, 229);
+  top: 20px;
+  border-radius: 50px;
+}
